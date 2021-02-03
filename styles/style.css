@@ -1,52 +1,211 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  --text-color: #000;
+  --pri-text: #1f2544;
+  --sec-text: #979797;
+  --background: #fff;
+  --background2: #fff;
+  --border-color: #eee;
+  --border-radius: 0.5em;
+}
+
+.dark {
+  /* Dark vars go here later */
+  --text-color: #ddd;
+  --pri-text: #ddd;
+  --sec-text: #ddd;
+  --background: #000;
+  --background2: #1f1f1f;
+  --border-color: #808080;
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: var(--background);
 }
 
-h1 {
-  background-color: #1b1b1b;
-  color: white;
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  color: var(--pri-text)
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background2);
+}
+
+header div a {
   font-weight: bold;
-  text-align: center;
-  padding: 1.5em;
-  box-shadow: 0px 0.25em 0.25em 0px rgba(0, 0, 0, 0.25);
-  position: sticky;
+  font-size: 0.875em;
+}
+
+header div i {
+  padding-right: 1em;
+}
+
+header div button {
+  border: none;
+  background: none;
+  outline: none;
+  animation: rotation 2s infinite linear;
+  animation-play-state: paused;
+}
+
+header div button:hover {
+  transform: rotate(90deg);
+  animation-play-state: running;
+}
+
+header nav {
+  z-index: 2;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,.12);
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background2);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75em 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--sec-text);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.75em;
+  padding: 1em 0.5em;
+}
+
+main {
+  padding: 0.5em;
+}
+
+#forwardIcons ul {
+  display: flex;
+  justify-content: stretch;
+}
+
+#forwardIcons li {
+  color: var(--pri-text);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+#forwardIcons li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#forwardIcons i {
+  padding: 0.25em;
+}
+
+#forwardIcons li span::after {
+  content: " >"
+}
+
+#forwardIcons li:hover {
+  border: 1px solid var(--pri-text);
+  border-radius: 0.5em;
+}
+
+#frontpage {
+  border-bottom: 1px solid var(--border-color)
+}
+
+#frontpage > a {
+  color: #fff;
+}
+
+#frontpage > a figure {
+  position: relative;
   margin-bottom: 1em;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 75%;
-  margin: auto;
+#frontpage > a figure img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-height: 20em;
 }
 
-article {
-  padding: 1em;
-  margin: 1em;
-  background-color: #ffffff;
-  border-radius: 0.25em;
-  flex: 1 0 40%;
-  cursor: pointer;
-}
-
-article:hover {
-  transform: translateY(-0.25em) translateX(0.25em);
-  box-shadow: 0px 0.5em 0.25em 0px rgba(0, 0, 0, 0.25);
-}
-
-h2 {
-  padding-bottom: 1em;
-  text-align: center;
+#frontpage > a figure figcaption {
+  font-size: 1.5em;
   font-weight: bold;
+  position: absolute;
+  bottom: 1em;
+  left: 0.5em;
+  right: 0.5em;
 }
 
-h2::before {
-  content: "| ";
-  color: peru;
+#frontpage ul li {
+  margin-bottom: 1em;
+}
+
+#frontpage li > a {
+  color: var(--pri-text);
+  text-decoration: none;
+}
+
+#frontpage li > a:hover {
+  text-decoration: underline;
+}
+
+#frontpage ul li:last-child {
+  text-align: center;
+}
+
+#frontpage ul li:last-child a::after {
+  content: " >"
+}
+
+#frontpage ul article {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#frontpage article img {
+  border-radius: var(--border-radius)
+}
+
+#frontpage article p {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+#frontpage article p[data-attribute]::before {
+  content: attr(data-attribute);
+  color: red;
+  padding-bottom: 0.25em;
+}
+
+#frontpage article p[data-attribute="video"]::after {
+  color: var(--pri-text);
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  content: "\f144";
+  position: absolute;
+  left: 0.25em;
+  bottom: 0.25em;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg)
+  }
 }
