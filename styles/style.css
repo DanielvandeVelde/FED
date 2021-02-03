@@ -212,7 +212,7 @@ main {
 
 .newsSection article p[data-attribute]::before {
   content: attr(data-attribute);
-  color: red;
+  color: #c40000;
 }
 
 .newsSection article time {
@@ -222,7 +222,7 @@ main {
   bottom: 1em;
 }
 
-.newsSection article p[data-attribute="video"]::after {
+.newsSection article p[data-attribute="Video"]::after {
   color: #fff;
   font-family: FontAwesome;
   font-size: 2em;
