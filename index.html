@@ -1,26 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Daniel van de Velde">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hey</title>
-	<link href="styles/reset.css" rel="stylesheet">
-	<link href="styles/style.css" rel="stylesheet">
-</head>
-
-<body>
-	<h1>Zo'n overzicht</h1>
-	<section>
-		<article><h2>Artikelnaam</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo aliquam modi eveniet rerum, consequuntur necessitatibus! Et expedita similique fugiat quidem, rem deleniti impedit nam? Exercitationem accusamus est commodi distinctio?</p></article>
-		<article><h2>Artikelnaam</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo aliquam modi eveniet rerum, consequuntur necessitatibus! Et expedita similique fugiat quidem, rem deleniti impedit nam? Exercitationem accusamus est commodi distinctio?</p></article>
-		<article><h2>Artikelnaam</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo aliquam modi eveniet rerum, consequuntur necessitatibus! Et expedita similique fugiat quidem, rem deleniti impedit nam? Exercitationem accusamus est commodi distinctio?</p></article>
-		<article><h2>Artikelnaam</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo aliquam modi eveniet rerum, consequuntur necessitatibus! Et expedita similique fugiat quidem, rem deleniti impedit nam? Exercitationem accusamus est commodi distinctio?</p></article>
-		<article><h2>Artikelnaam</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo aliquam modi eveniet rerum, consequuntur necessitatibus! Et expedita similique fugiat quidem, rem deleniti impedit nam? Exercitationem accusamus est commodi distinctio?</p></article>
-		<article><h2>Artikelnaam</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quo aliquam modi eveniet rerum, consequuntur necessitatibus! Et expedita similique fugiat quidem, rem deleniti impedit nam? Exercitationem accusamus est commodi distinctio?</p></article>
-	</section>
-		<script src="scripts/script.js"></script>
-</body>
-	
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Daniel van de Velde" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hey</title>
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f37409f078.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a><i class="fas fa-fast-forward"></i>ZO.nl</a
+        ><button id="theme">🌞</button>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#frontpage">Voorpagina</a></li>
+          <li><a href="#future">Toekomstig</a></li>
+          <li><a href="#">Populair</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="forwardIcons">
+        <ul>
+          <li>
+            <a><i class="fas fa-cloud-sun"></i><span>Weer</span></a>
+          </li>
+          <li>
+            <a><i class="fas fa-car"></i><span>Traffic</span></a>
+          </li>
+          <li>
+            <a><i class="far fa-chart-bar"></i><span>Stocks</span></a>
+          </li>
+          <li>
+            <a><i class="fas fa-tv"></i><span>Tv</span></a>
+          </li>
+          <li>
+            <a><i class="fas fa-futbol"></i><span>Sports</span></a>
+          </li>
+        </ul>
+      </section>
+      <section id="frontpage">
+        <a href="#">
+          <figure>
+            <img
+              src="https://via.placeholder.com/150"
+              alt="placeholder image for this article thanks to Placeholder.com"
+            />
+            <figcaption>
+              What happens when the figcaption is zeg maar best wel heel erg
+              long enzo dingen!
+            </figcaption>
+          </figure>
+        </a>
+        <ul>
+          <li>
+            <a href="#">
+              <article>
+                <figure>
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder image for this article thanks to Placeholder.com"
+                  />
+                </figure>
+                <p data-attribute="video">
+                  Hier komt de tekst te staan die belangrijk is voor dit artikel
+                </p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article>
+                <figure>
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder image for this article thanks to Placeholder.com"
+                  />
+                </figure>
+                <p>
+                  Hier komt de tekst te staan die belangrijk is voor dit artikel
+                </p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article>
+                <figure>
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder image for this article thanks to Placeholder.com"
+                  />
+                </figure>
+                <p>
+                  Hier komt de tekst te staan die belangrijk is voor dit artikel
+                </p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article>
+                <figure>
+                  <img
+                    src="https://via.placeholder.com/150"
+                    alt="placeholder image for this article thanks to Placeholder.com"
+                  />
+                </figure>
+                <p>
+                  Hier komt de tekst te staan die belangrijk is voor dit artikel
+                </p>
+              </article>
+            </a>
+          </li>
+          <li><a href="#">Meer voorpagina nieuws</a></li>
+        </ul>
+      </section>
+      <section id="shamelessAd">
+        <p>Het zou tof zijn als je je inschrijft voor deze dingen</p>
+        <div>
+          <button class="darkPattern">Doen we</button
+          ><button class="lightPattern">Nee bedankt</button>
+        </div>
+      </section>
+      <section>
+        <h2 id="future"><a href="#">Toekomstig</a></h2>
+      </section>
+    </main>
+    <aside>
+      <!-- Tijd en dingen hier -->
+    </aside>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
