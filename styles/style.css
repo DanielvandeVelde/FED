@@ -6,6 +6,7 @@
   --background2: #fff;
   --border-color: #eee;
   --border-radius: 0.5em;
+  --header-color: #1f2544;
 }
 
 .dark {
@@ -14,11 +15,16 @@
   --background: #000;
   --background2: #1f1f1f;
   --border-color: #808080;
+  --header-color: #2e3c83;
 }
 
 body {
   background-color: var(--background);
 }
+
+/*
+Header
+*/
 
 header {
   display: flex;
@@ -86,6 +92,11 @@ main {
   padding: 0.5em;
 }
 
+
+/*
+Widgets at the top
+*/
+
 #forwardIcons ul {
   display: flex;
   justify-content: stretch;
@@ -129,9 +140,39 @@ main {
   border-radius: 0.5em;
 }
 
+/*
+A section of news
+*/
+
 .newsSection {
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 1em;
+}
+
+.newsSection > h2 {
+  flex: 1 0 100%;
+  margin: 1.5em auto 1.5em 0;
+}
+
+.newsSection > h2 a {
+  text-decoration: none;
+  border-radius: 0.5em 1em 1em 0.5em;
+  background-color: var(--header-color);
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.newsSection#future > h2 a {
+  background-color: #ed893c;
+}
+
+.newsSection#popular > h2 a {
+  background-color: #b60f80;
+}
+
+.newsSection > h2 a:hover {
+  text-decoration: underline;
 }
 
 .newsSection > a {
@@ -232,6 +273,10 @@ main {
   bottom: 0.25em;
 }
 
+/*
+Hey, wanna get our newsletter? ad
+*/
+
 #shamelessAd {
   border: 1px solid var(--border-color);
   background-color: var(--background2);
@@ -282,14 +327,6 @@ button.lightPattern {
   border-radius: 1.5em;
 }
 
-.dark button.lightPattern {
-  background: hsla(0,0%,50.2%,.2)
-}
-
-.dark button.darkPattern {
-  background: hsla(0,0%,50.2%,.1)
-}
-
 #shamelessAd::before {
   color: var(--pri-text);
   font-family: FontAwesome;
@@ -300,6 +337,88 @@ button.lightPattern {
   content: "\f0f3";
 }
 
+/*
+Videos
+*/
+
+#videos {
+  display: flex;
+  margin: 1em 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#videos a {
+  text-decoration: none;
+  color: var(--pri-text);
+}
+
+#videos h2 {
+  flex: 1 0 100%;
+  margin: 1em auto 1em 0;
+}
+
+#videos h2 a {
+  border-radius: 0.5em 1em 1em 0.5em;
+  background-color: var(--header-color);
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: bold;
+}
+
+#videos h2 a:hover {
+  text-decoration: underline;
+}
+
+#videos > a {
+  flex: 1 0 calc(50% - 0.5em);
+}
+
+#videos > a:nth-of-type(odd) {
+  margin-right: 1em;
+}
+
+#videos > a img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#videos > a figure {
+  position: relative;
+  padding: 1em 0;
+}
+
+#videos > a figure::before {
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 2em;
+  content: "\f144";
+  position: absolute;
+  left: 0.25em;
+  bottom: 1.75em;
+}
+
+
+/*
+Dark theme
+*/
+.dark #forwardIcons li:hover {
+  border: 1px solid transparent
+}
+
+.dark button.lightPattern {
+  background: hsla(0,0%,50.2%,.2)
+}
+
+.dark button.darkPattern {
+  background: hsla(0,0%,50.2%,.1)
+}
+
+/*
+Minor animations, for the fun of it
+*/
 @keyframes rotation {
   from {
     transform: rotate(0deg);
