@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Daniel van de Velde" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ZO - Het nieuws uit de toekomst als eerst op ZO.nl</title>
+    <title>ZO - Het toekomstige nieuws het eerst op ZO.nl</title>
     <link href="styles/reset.css" rel="stylesheet" />
     <link href="styles/style.css" rel="stylesheet" />
     <script
@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="root">
     <header>
       <div>
         <a href="#"><i class="fas fa-fast-forward"></i>ZO.nl</a
@@ -130,8 +130,8 @@
           <p>Het zou tof zijn als je je inschrijft voor deze dingen</p>
         </article>
         <div>
-          <button class="darkPattern">Ja, graag</button
-          ><button class="lightPattern">Nee, bedankt</button>
+          <button class="darkPattern">Ja, graag</button>
+          <button class="lightPattern">Nee, bedankt</button>
         </div>
       </section>
       <section id="videos">
@@ -174,7 +174,7 @@
         </a>
       </section>
       <section id="future" class="newsSection">
-        <h2><a href="#">Future</a></h2>
+        <h2><a href="#">Toekomstig</a></h2>
         <a href="#">
           <figure>
             <img
@@ -331,13 +331,192 @@
           <li><a href="#">Meer populair nieuws</a></li>
         </ul>
       </section>
-      <!-- Advertenties maken ?-->
+      <!-- Advertentielijst maken ?-->
     </main>
     <aside>
-      <!-- Net binnen, meest gelezen lezers fotos en nushop -->
+      <section class="justin">
+        <h2><a href="#">Net binnen</a></h2>
+        <ul>
+          <li>
+            <a href="#">
+              <time datetime="10:06">10:06</time><span>Video</span
+              ><span>Informatie</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <time datetime="09:46">09:46</time
+              ><span>'Nog een titel over wat net binnen is'</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <time datetime="09:15">09:15</time
+              ><span>'Nog een titel over wat net binnen is'</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <time datetime="09:10">09:10</time
+              ><span>'Nog een titel over wat net binnen is'</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <time datetime="09:04">09:04</time
+              ><span>'Nog een titel over wat net binnen is'</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <time datetime="09:01">09:01</time
+              ><span>'Nog een titel over wat net binnen is'</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <time datetime="08:54">08:54</time
+              ><span class="special">Livestream</span
+              ><span>Informatie </span></a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <time datetime="08:32">08:32</time
+              ><span>'Nog een titel over wat net binnen is'</span>
+            </a>
+          </li>
+        </ul>
+        <span><a href="#">Meer Net binnen</a></span>
+      </section>
+      <section class="most">
+        <h2><a href="#">Meest gelezen</a></h2>
+        <ol>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <span><a href="#">Meer nieuws</a></span>
+        </ol>
+      </section>
+      <section class="most">
+        <h2><a href="#">Meest besproken</a></h2>
+        <ol>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Dit zijn de toppertjes en pareltjes die deze week zijn
+              binnengekomen
+            </a>
+          </li>
+        </ol>
+      </section>
+      <section class="readerPhoto">
+        <h2><a href="#">Lezersfoto</a></h2>
+        <figure>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="placeholder image for this article thanks to Placeholder.com"
+          />
+          <button><i class="fas fa-expand-alt"></i></button>
+          <div class="photoDirectionals">
+            <button><i class="fas fa-chevron-left"></i></button>
+            <button><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </figure>
+        <a href="#">
+          <article>
+            <h3>Lezersbijdrage</h3>
+            <p>Heb jij eentje?</p>
+            <span>Stuur ze op</span>
+          </article>
+        </a>
+      </section>
     </aside>
     <footer>
-      <!-- Aardig wat links zeg maar -->
+      <ul>
+        <li class="frontpageLink"><a href="#">Voorpagina</a></li>
+        <li class="futureLink"><a href="#">Toekomstig</a></li>
+        <li class="popularLink"><a href="#">Populair</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Some say the world will end in fire,</a></li>
+        <li><a href="#">Some say in ice.</a></li>
+        <li><a href="#">From what I've tasted of desire</a></li>
+        <li><a href="#">I hold with those who favor fire.</a></li>
+        <li><a href="#">But if it had to perish twice,</a></li>
+        <li><a href="#">I think I know enough of hate</a></li>
+        <li><a href="#">To say that for destruction ice</a></li>
+        <li><a href="#">Is also great</a></li>
+        <li><a href="#">And would suffice.</a></li>
+        <li><a href="#">- Robert Frost</a></li>
+      </ul>
+      <div>
+        <span>Follow us on:</span>
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </li>
+        </ul>
+        <span>2021 FED - Daniel van de Velde</span>
+      </div>
     </footer>
     <script src="scripts/script.js"></script>
   </body>

@@ -2,6 +2,7 @@
   font-family: "Segoe UI", sans-serif;
   --pri-text: #1f2544;
   --sec-text: #979797;
+  --ter-text: #c40000;
   --background: #fff;
   --background2: #fff;
   --border-color: #eee;
@@ -14,12 +15,17 @@
   --sec-text: #ddd;
   --background: #000;
   --background2: #1f1f1f;
-  --border-color: #808080;
+  --border-color: #3f3f3f;
   --header-color: #2e3c83;
 }
 
 body {
   background-color: var(--background);
+}
+
+main {
+  margin-top: 2.5em;
+  padding: 0.5em;
 }
 
 /*
@@ -75,23 +81,21 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 0.75em 0;
+  padding: 0.675em 0;
 }
 
-header nav a {
+header nav li {
+  padding: 1px;
+}
+
+header nav li a {
   text-decoration: none;
   color: var(--sec-text);
   font-weight: bold;
   text-transform: capitalize;
   font-size: 0.75em;
-  padding: 1em 0.5em;
+  padding: 0.5em 0.75em;
 }
-
-main {
-  margin-top: 2.5em;
-  padding: 0.5em;
-}
-
 
 /*
 Widgets at the top
@@ -167,8 +171,16 @@ A section of news
   background-color: #ed893c;
 }
 
+#future li:last-child a {
+  color: #ed893c;
+}
+
 .newsSection#popular > h2 a {
   background-color: #b60f80;
+}
+
+#popular li:last-child a {
+  color: #b60f80;
 }
 
 .newsSection > h2 a:hover {
@@ -225,6 +237,11 @@ A section of news
   font-family: FontAwesome;
   content: "\f054";
   padding-left: 0.5em;
+  display: inline-block;
+}
+
+.newsSection ul li:last-child a:hover::after {
+  text-decoration: none;
 }
 
 .newsSection ul article {
@@ -253,7 +270,8 @@ A section of news
 
 .newsSection article p[data-attribute]::before {
   content: attr(data-attribute);
-  color: #c40000;
+  font-size: 0.75em;
+  color: var(--ter-text)
 }
 
 .newsSection article time {
@@ -278,7 +296,7 @@ Hey, wanna get our newsletter? ad
 */
 
 #shamelessAd {
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   background-color: var(--background2);
   position: relative;
   padding: 1.25em;
@@ -386,23 +404,522 @@ Videos
 }
 
 #videos > a figure {
-  position: relative;
   padding: 1em 0;
 }
 
-#videos > a figure::before {
+#videos > a figure figcaption {
+  position: relative;
+}
+
+#videos > a figure figcaption::before {
   color: #fff;
   font-family: FontAwesome;
   font-size: 2em;
   content: "\f144";
   position: absolute;
   left: 0.25em;
-  bottom: 1.75em;
+  top: -1.75em;
 }
 
+/*
+Aside
+*/
+
+aside {
+  padding: 0.5em;
+}
 
 /*
-Dark theme
+New new new, and his name is; Justin
+*/
+
+.justin {
+  margin: 1em 0;
+}
+
+.justin h2 {
+  border-radius: 0.5em 1em 1em 0.5em;
+  background-color: var(--header-color);
+  padding: 0.5em 1em 0.625em 2em;
+  font-weight: bold;
+  width: max-content;
+  position: relative;
+}
+
+.justin h2 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.justin h2 a:hover {
+  text-decoration: underline;
+}
+
+.justin h2::before {
+  color: #fff;
+  font-family: FontAwesome;
+  font-weight: normal;
+  content: "\f519";
+  margin-right: 1em;
+  font-size: 0.5em;
+  position: absolute;
+  left: 1.5em;
+  bottom: 1.625em;
+}
+
+.justin ul {
+  position: relative;
+  padding-left: 1em;
+  margin: 2em 0;
+}
+
+.justin ul::before {
+  content: "";
+  top: 0.5em;
+  bottom: 0.5em;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  border-left: 1px dashed #878787;
+}
+
+.justin ul:first-of-type::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid var(--border-color);
+  bottom: -1em;
+  left: 0;
+  right: 0;
+}
+
+.justin ul:first-of-type {
+  padding-bottom: 1em;
+}
+
+.justin ul:first-of-type li:last-of-type::after {
+  position: absolute;
+  width: 0.25em;
+  height: 0.075em;
+  left: -1.075em;
+  content: "";
+  border-top: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+  transform: skewY(20deg);
+  bottom: -0.75em;
+}
+
+.justin ul:last-of-type {
+  padding-top: 1em;
+}
+
+.justin ul:last-of-type li:first-of-type::after {
+  position: absolute;
+  width: 0.25em;
+  height: 0.075em;
+  left: -1.075em;
+  content: "";
+  border-top: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+  transform: skewY(20deg);
+  top: -0.75em;
+}
+
+.justin li {
+  position: relative;
+  padding: 0.25em 0;
+}
+
+.justin li:first-of-type::before {
+  top: 0;
+}
+
+.justin li:first-of-type,
+.justin li:first-of-type a {
+  padding-top: 0;
+}
+
+.justin li:last-of-type,
+.justin li:last-of-type a {
+  padding-bottom: 0;
+}
+
+.justin li::before {
+  position: absolute;
+  content: "•";
+  color: #878787;
+  left: -1.1675em;
+  top: 1.125em;
+}
+
+.justin li a {
+  padding: 1em 0;
+  text-decoration: none;
+  color: var(--pri-text);
+  display: flex;
+}
+
+.justin li a::after {
+  font-size: 0.75em;
+  font-family: FontAwesome;
+  content: "\f054";
+  position: absolute;
+  right: 0;
+}
+
+.justin li a .special {
+  color: var(--ter-text);
+  padding-right: 0.5em;
+}
+
+.justin li a:hover span {
+  text-decoration: underline;
+}
+
+.justin li a time {
+  font-size: 0.875em;
+  color: #878787;
+  padding-right: 1em;
+}
+
+.justin > span {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.justin > span a {
+  padding: 1.25em;
+  font-size: 0.925em;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--pri-text);
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+.justin > span a:hover {
+  text-decoration: underline;
+}
+
+.justin > span a::after {
+  display: inline-block;
+  font-size: 0.75em;
+  font-family: FontAwesome;
+  font-weight: normal;
+  padding-left: 0.5em;
+  content: "\f054";
+}
+
+/*
+Most read and talked about
+*/
+
+.most {
+  margin: 1em 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.most > h2 {
+  flex: 1 0 100%;
+  margin: 1.5em auto 1.5em 0;
+}
+
+.most > h2 a {
+  text-decoration: none;
+  border-radius: 0.5em 1em 1em 0.5em;
+  background-color: var(--header-color);
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.most h2 a:hover {
+  text-decoration: underline;
+}
+
+.most ol li {
+  counter-increment: listitem;
+  position: relative;
+  display: flex;
+  padding: 1em;
+}
+
+.most ol li::before {
+  color: var(--pri-text);
+  content: counter(listitem) ".";
+  display: block;
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+.most li a {
+  color: var(--pri-text);
+  text-decoration: none;
+}
+
+.most li a:hover {
+  text-decoration: underline;
+}
+
+.most ol li a::after {
+  font-size: 0.75em;
+  font-family: FontAwesome;
+  content: "\f054";
+  position: absolute;
+  right: 0;
+  top: 1.5em;
+}
+
+.most span {
+  display: flex;
+}
+
+.most span a {
+  padding: 1em 0;
+  font-weight: bold;
+  flex: 1 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--pri-text);
+}
+
+.most span a:hover {
+  text-decoration: underline;
+}
+
+.most span a::after {
+  display: inline-block;
+  font-size: 0.75em;
+  font-family: FontAwesome;
+  font-weight: normal;
+  padding-left: 0.5em;
+  content: "\f054";
+}
+
+/*
+Photo by reader
+*/
+
+.readerPhoto {
+  padding-bottom: 1em;
+}
+
+.readerPhoto > h2 {
+  flex: 1 0 100%;
+  margin: 1.5em auto 1.5em 0;
+}
+
+.readerPhoto > h2 a {
+  text-decoration: none;
+  border-radius: 0.5em 1em 1em 0.5em;
+  background-color: var(--header-color);
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.readerPhoto h2 a:hover {
+  text-decoration: underline;
+}
+
+.readerPhoto > figure {
+  position: relative;
+  margin-bottom: 1em;
+  height: 22.5em;
+}
+
+.readerPhoto > figure img {
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
+}
+
+.readerPhoto figure::before {
+  content: "1/100";
+  position: absolute;
+  color: white;
+  padding: 0.25em 0.5em;
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 0.125em;
+  border: none;
+  top: 1em;
+  left: 1em;
+}
+
+.readerPhoto button {
+  position: absolute;
+  color: white;
+  padding: 0.25em 0.5em;
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 0.125em;
+  border: none;
+}
+
+.readerPhoto button:hover {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.readerPhoto figure > button {
+  top: 1em;
+  right: 1em;
+}
+
+.readerPhoto .photoDirectionals {
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.readerPhoto figure:hover .photoDirectionals {
+  visibility: visible;
+  opacity: 1;
+}
+
+.readerPhoto .photoDirectionals button {
+  color: white;
+  bottom: 50%;
+}
+
+.readerPhoto .photoDirectionals button:first-of-type {
+  left: 0.5em;
+}
+
+.readerPhoto .photoDirectionals button:last-of-type {
+  right: 0.5em;
+}
+
+.readerPhoto > a {
+  text-decoration: none;
+}
+
+.readerPhoto article {
+  border: 1px solid #a8c7e0;
+  background-color: var(--background2);
+  position: relative;
+  padding: 1em;
+  padding-left: 10em;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875em;
+}
+
+.readerPhoto article h3 {
+  font-weight: bold;
+  color: var(--pri-text);
+  padding-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.readerPhoto article p {
+  color: var(--pri-text);
+  padding-bottom: 1em;
+}
+
+.readerPhoto article span {
+  text-decoration: underline;
+  color: var(--pri-text);
+}
+
+.readerPhoto article span::after {
+  font-size: 0.75em;
+  font-family: FontAwesome;
+  content: "\f054";
+  padding-left: 0.5em;
+  display: inline-block
+}
+
+.readerPhoto article::before {
+  content: "\f0fe";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 1em;
+  font-size: 3em;
+  top: 25%;
+  color: #a8c7e0;
+}
+
+.readerPhoto article::after {
+  content: "\f1d8";
+  font-family: FontAwesome;
+  position: absolute;
+  left: 2.25em;
+  font-size: 2em;
+  top: 50%;
+  color: var(--pri-text);
+}
+
+.readerPhoto article:hover {
+  border-color: var(--pri-text);
+}
+
+.readerPhoto article:hover::before {
+  color: var(--pri-text);
+}
+
+/*
+Footer
+*/
+
+footer {
+  border-top: 1px solid var(--border-color);
+  padding: 1em 0;
+}
+
+footer {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  flex-direction: column;
+  font-size: 0.875em;
+}
+
+footer ul li {
+  padding: 0.5em 0;
+}
+
+footer ul:first-of-type li {
+  font-weight: bold;
+}
+
+footer > ul:first-of-type li:nth-child(2) a{
+  color: #ed893c;
+}
+footer > ul:first-of-type li:nth-child(3) a{
+  color: #b60f80;
+}
+
+footer div ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer div li {
+  padding: 0.25em;
+}
+
+footer span:first-of-type {
+  font-weight: bold;
+  color: var(--pri-text)
+}
+
+footer span:last-of-type {
+  color: #878787;
+}
+
+footer li a {
+  text-decoration: none;
+  color: var(--pri-text)
+}
+
+/*
+Minor changes that the dark theme applies to some areas
 */
 .dark #forwardIcons li:hover {
   border: 1px solid transparent
@@ -414,6 +931,28 @@ Dark theme
 
 .dark button.darkPattern {
   background: hsla(0,0%,50.2%,.1)
+}
+
+.dark nav li a:hover {
+  background-color: rgba(255,255,255,.075);
+  border-radius: 1.5em;
+}
+
+#root.dark main .newsSection ul li:last-child a {
+  color: var(--pri-text);
+}
+
+.dark .readerPhoto article {
+  border-color: var(--border-color);
+}
+
+.dark .readerPhoto article::before {
+  color: var(--border-color);
+}
+
+
+.dark .readerPhoto article::after {
+  color: var(--pri-text);
 }
 
 /*
