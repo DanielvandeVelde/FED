@@ -10,8 +10,57 @@ Komt er aan!
 Deze website ga ik namaken. Dus dan is het handig dat je daar een screenshot van heb.
 
 <details>
-<summary> Nu.nl klein </summary>
-<kbd>![Nu.nl klein](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20klein.jpg "Nu.nl klein")</kbd>
+<summary> Hoofdpagina Nu.nl klein licht </summary>
+
+Screenshot 24 februari 2021 Nu.nl klein licht   
+<kbd>
+![alt text](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20klein.jpg "Nu.nl klein licht")
+</kbd>
+</details>
+
+<details>
+<summary> Hoofdpagina Nu.nl klein donker </summary>
+
+Screenshot 24 februari 2021 Nu.nl klein donker   
+<kbd>
+![alt text](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20klein%20dark.jpg "Nu.nl klein donker")
+</kbd>
+</details>
+
+<details>
+<summary> Hoofdpagina Nu.nl middel licht </summary>
+
+Screenshot 24 februari 2021 Nu.nl middel licht   
+<kbd>
+![alt text](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20middel.jpg "Nu.nl middel licht")
+</kbd>
+</details>
+
+<details>
+<summary> Hoofdpagina Nu.nl middel donker </summary>
+
+Screenshot 24 februari 2021 Nu.nl middel donker   
+<kbd>
+![alt text](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20middel%20dark.jpg "Nu.nl middel donker")
+</kbd>
+</details>
+
+<details>
+<summary> Hoofdpagina Nu.nl groot licht </summary>
+
+Screenshot 24 februari 2021 Nu.nl groot licht   
+<kbd>
+![alt text](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20groot.jpg "Nu.nl groot licht")
+</kbd>
+</details>
+
+<details>
+<summary> Hoofdpagina Nu.nl groot donker </summary>
+
+Screenshot 24 februari 2021 Nu.nl groot donker   
+<kbd>
+![alt text](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20groot%20dark.jpg "Nu.nl groot donker")
+</kbd>
 </details>
 
 ## Intake (week 1)
