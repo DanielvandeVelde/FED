@@ -6,6 +6,14 @@
 
 Komt er aan!
 
+## Nu.nl screenshots
+Deze website ga ik namaken. Dus dan is het handig dat je daar een screenshot van heb.
+
+<details>
+<summary> Nu.nl klein </summary>
+<kbd>![Nu.nl klein](https://raw.githubusercontent.com/DanielvandeVelde/FED/main/readme%20images/Nu.nl%20klein.jpg "Nu.nl klein")</kbd>
+</details>
+
 ## Intake (week 1)
 
 Hoi, ik kan een beetje FED.  
@@ -43,3 +51,4 @@ Mijn HTML is geprettified. Dit was ik blijkbaar vergeten aan te zetten vorige ke
 - [x] Nieuwe CSS dingen (counters, ???)
 - [x] CSS variabelen
 - [ ] Pagina 2!
+- [ ] Visisbility en mediaqueries combineren voor aspecten die wel/niet zichtbaar zijn op mobiel & desktop
