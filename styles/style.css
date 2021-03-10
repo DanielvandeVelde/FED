@@ -48,7 +48,7 @@ header div {
 }
 
 header div a {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.875em;
   text-decoration: none;
   color: var(--pri-text);
@@ -92,7 +92,7 @@ header nav li {
 header nav li a {
   text-decoration: none;
   color: var(--sec-text);
-  font-weight: bold;
+  font-weight: 700;
   text-transform: capitalize;
   font-size: 0.75em;
   padding: 0.5em 0.75em;
@@ -171,7 +171,7 @@ main > section:nth-of-type(5) > h2 a {
   background-color: var(--header-color);
   padding: 0.5em 1em;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 main > section:nth-of-type(6) > h2 a {
@@ -222,7 +222,7 @@ main > section:nth-of-type(2) > a figure figcaption,
 main > section:nth-of-type(6) > a figure figcaption,
 main > section:nth-of-type(5) > a figure figcaption {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 700;
   position: absolute;
   bottom: 1em;
   left: 0.5em;
@@ -252,7 +252,7 @@ main > section:nth-of-type(2) ul li:last-child,
 main > section:nth-of-type(6) ul li:last-child,
 main > section:nth-of-type(5) ul li:last-child {
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0.25em;
 }
 
@@ -351,7 +351,7 @@ main > section:nth-of-type(3) {
 }
 
 main > section:nth-of-type(3) article h3 {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--pri-text);
   padding-bottom: 1em;
 }
@@ -382,7 +382,7 @@ main > section div button:last-of-type:hover {
 }
 
 main > section div button:first-of-type {
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   background-color: #1f2544;
   border-radius: 1.5em;
@@ -425,7 +425,7 @@ main > section:nth-of-type(4) h2 a {
   background-color: var(--header-color);
   padding: 0.5em 1em;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 main > section:nth-of-type(4) h2 a:hover {
@@ -484,7 +484,7 @@ aside > section:nth-of-type(1) h2 {
   border-radius: 0.5em 1em 1em 0.5em;
   background-color: var(--header-color);
   padding: 0.5em 1em 0.625em 2em;
-  font-weight: bold;
+  font-weight: 700;
   width: max-content;
   position: relative;
 }
@@ -636,7 +636,7 @@ aside > section:nth-of-type(1) > span {
 aside > section:nth-of-type(1) > span a {
   padding: 1.25em;
   font-size: 0.925em;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   color: var(--pri-text);
   flex: 1 0 auto;
@@ -679,7 +679,7 @@ aside > section:nth-of-type(3) > h2 a {
   background-color: var(--header-color);
   padding: 0.5em 1em;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 aside > section:nth-of-type(2) h2 a:hover,
@@ -700,7 +700,7 @@ aside > section:nth-of-type(3) ol li::before {
   color: var(--pri-text);
   content: counter(listitem) ".";
   display: block;
-  font-weight: bold;
+  font-weight: 700;
   padding-right: 1em;
 }
 
@@ -733,7 +733,7 @@ aside > section:nth-of-type(3) span {
 aside > section:nth-of-type(2) span a,
 aside > section:nth-of-type(3) span a {
   padding: 1em 0;
-  font-weight: bold;
+  font-weight: 700;
   flex: 1 0 auto;
   text-align: center;
   text-decoration: none;
@@ -774,7 +774,7 @@ aside > section:nth-of-type(4) > h2 a {
   background-color: var(--header-color);
   padding: 0.5em 1em;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 aside > section:nth-of-type(4) h2 a:hover {
@@ -864,7 +864,7 @@ aside > section:nth-of-type(4) article {
 }
 
 aside > section:nth-of-type(4) article h3 {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--pri-text);
   padding-bottom: 1em;
   font-size: 1.2em;
@@ -939,7 +939,7 @@ footer ul li {
 }
 
 footer ul:first-of-type li {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 footer > ul:first-of-type li:nth-child(2) a {
@@ -974,7 +974,7 @@ footer div li a {
 }
 
 footer span:first-of-type {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--pri-text);
 }
 
@@ -990,7 +990,7 @@ footer li a {
 /*
 Minor changes that the dark theme applies to some areas
 */
-.dark > section:first-child li:hover {
+.dark main > section:first-of-type li:hover {
   border: 1px solid transparent;
 }
 
@@ -1030,7 +1030,7 @@ Minor animations, for the fun of it
 */
 @keyframes rotation {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0);
   }
 
   to {
