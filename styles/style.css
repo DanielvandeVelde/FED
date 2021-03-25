@@ -19,6 +19,10 @@
   --header-color: #2e3c83;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
 }
@@ -396,6 +400,30 @@ main > section:nth-of-type(3)::before {
   left: 0.5em;
   top: 0.75em;
   content: "\f0f3";
+}
+
+/*
+Article page
+*/
+
+main > section:nth-of-type(2) > article > figure {
+  padding: 0.5em;
+  height: 22.5em;
+  position: relative;
+}
+
+main > section:nth-of-type(2) > article > figure > figcaption {
+  font-size: 1.5em;
+  font-weight: 700;
+  position: absolute;
+  bottom: 1em;
+  left: 0.5em;
+  right: 0.5em;
+  color: white;
+}
+
+main > section:nth-of-type(2) > article > div time {
+  position: initial;
 }
 
 /*
@@ -1086,5 +1114,14 @@ Minor animations, for the fun of it
   main {
     margin-left: auto;
     flex: 0 0 42em;
+  }
+
+  main > section ul figure {
+    display: none;
+    visibility: collapse;
+  }
+
+  main section ul figure::before {
+    content: ">";
   }
 }
