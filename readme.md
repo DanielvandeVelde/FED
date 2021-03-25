@@ -5,7 +5,7 @@
 ## Breakdownschets (week 1)
 
 <details>
-<summary> Hoofdpagina Nu.nl breakdownschets  </summary>
+<summary> Nu.nl breakdownschets  </summary>
 
 Breakdownschets van Nu.nl (klein licht-modus) screenshot genomen op 24 februari 2021  
 <kbd>
@@ -17,7 +17,7 @@ Breakdownschets van Nu.nl (klein licht-modus) screenshot genomen op 24 februari 
 ## Nu.nl screenshots
 
 Ik ga Nu.nl zo goed mogelijk namaken dus hier zijn een aantal screenshots zodat je kan zien hoe deze website er uit ziet.  
-Natuurlijk kan je ook [Nu.nl](nu.nl) zelf openen al weet ik niet hoe deze er op dit moment uit ziet.
+Natuurlijk kan je ook [Nu.nl](https://nu.nl) zelf openen al weet ik niet hoe deze er op dit moment uit ziet.
 
 <details>
 <summary> Hoofdpagina Nu.nl klein licht </summary>
@@ -120,6 +120,7 @@ Er zijn nog een aantal dingen die ik deze week wil doen:
 - [ ] Bronnen netter formuleren
 
 Ook wil ik mijn procesverslag iets netter herschrijven.  
+Maar dan moet ik natuurlijk eerst alles wat netter af hebben.  
 Mogelijk ook wat meer doen met mediaqueries & display/visibility.
 
 ## TODO
