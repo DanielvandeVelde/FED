@@ -474,6 +474,7 @@ main > section:nth-of-type(2) > section:first-of-type > span {
   font-weight: bold;
   padding: 0.25em 0.75em;
   position: relative;
+  cursor: pointer;
 }
 
 main > section:nth-of-type(2) > section:first-of-type > span::before {
@@ -524,7 +525,6 @@ main > section:nth-of-type(2) > section:nth-of-type(2) ul li {
 }
 
 main > section:nth-of-type(2) > section:nth-of-type(2) ul li::after {
-  content: ">";
   padding: 0 0.5em;
 }
 
