@@ -114,14 +114,21 @@ Mijn HTML is geprettified. Dit was ik blijkbaar vergeten aan te zetten vorige ke
 Lekker bezig geweest met mijn detailpagina.  
 Er zijn nog een aantal dingen die ik deze week wil doen:
 
-- [ ] Volledig maken van detailpagina
 - [ ] 'echte' afbeeldingen toevoegen
 - [ ] Font Awesome vervangen door SVG
-- [ ] Bronnen netter formuleren
 
 Ook wil ik mijn procesverslag iets netter herschrijven.  
 Maar dan moet ik natuurlijk eerst alles wat netter af hebben.  
 Mogelijk ook wat meer doen met mediaqueries & display/visibility.
+
+## Bronnen
+
+- [Nu.nl](https://www.nu.nl/)
+- [Box-shadow tool (cssmatic.com)](https://www.cssmatic.com/box-shadow)
+- [MDN Web Docs / Mozilla Developer Network](https://developer.mozilla.org/)
+- [MDN - Using CSS counters](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
+- [Flexbox spiekbriefje (css-tricks)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [MDN - matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
 
 ## TODO
 
