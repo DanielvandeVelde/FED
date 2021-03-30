@@ -1229,13 +1229,4 @@ Minor animations, for the fun of it
     margin-left: auto;
     flex: 0 0 42em;
   }
-
-  main > section ul figure {
-    display: none;
-    visibility: collapse;
-  }
-
-  main section ul figure::before {
-    content: ">";
-  }
 }
